@@ -41,6 +41,7 @@ select{
     height: 5%;
     background-color: dimgray;
     color: white;
+    border-radius: 10px;
 }
 video {
     position: fixed;
