@@ -4,13 +4,16 @@ let sqb = document.getElementById("btn01");
 let sel001 = document.getElementById("sel01");
 let sel002 = document.getElementById("sel02");
 let txtLogo = document.getElementById("textLogo");
+let form01 = document.getElementById("form01");
 
 // Función para detectar si el texto es una URL
 function esURL(texto) {
     return /^https?:\/\/[\w\-]+(\.[\w\-]+)+[/#?]?.*$/.test(texto);
 }
 
-sqb.addEventListener('click', function() {
+form01.addEventListener('submit', function() {
+	event.preventDefault();
+	
     var value = sqi.value.trim();
     if (!value) {
         alert("You have to input something. :D");
@@ -84,3 +87,4 @@ if (sel002) {
         vid.play();
     });
 }
+
