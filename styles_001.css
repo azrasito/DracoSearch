@@ -19,9 +19,9 @@ input{
     width: 100%;
     border-radius: 10px 0px 0px 10px;
     outline: none;
-    border: none;
     background: #3a3a3a;
     color: white;
+    border: #none;
 }
 button{
     padding: 10px;
@@ -37,11 +37,12 @@ h2{
 }
 select{
     margin-top: 10px;
-    width: 70%;
-    height: 5%;
+    width: 40%;
+    height: 5.6%;
     background-color: dimgray;
     color: white;
     border-radius: 10px;
+    border: none;
 }
 video {
     position: fixed;
