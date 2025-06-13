@@ -247,9 +247,9 @@ srch.addEventListener("submit", function (event) {
 
     if (isValidUrl(query)) {
         const formattedUrl = query.startsWith("http") ? query : `https://${query}`;
-        window.location.href = formattedUrl;
+        window.open(formattedUrl);
     } else {
-        window.location.href = searchEngines[srchbrow.value] + encodeURIComponent(query);
+        window.open(searchEngine[srchbrow.value] + encodeURIComponent(query));
     }
 });
 
